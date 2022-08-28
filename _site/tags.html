@@ -9,11 +9,11 @@
 
   
 
-  <title>About</title>
+  <title>Tag Index</title>
 
   
 
-  <meta name="description" content="This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/) You can find the source code for Minima at GitHub: [jekyll][jekyll-organization] / [minima](https://github.com/jekyll/minima) You can find the source code for Jekyll at GitHub: [jekyll][jekyll-organization]...">
+  <meta name="description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:',' | sort -%} {%- for tag...">
 
   
 
@@ -72,15 +72,15 @@
 
   
   <meta property="og:site_name" content="T3chie's oku-val Page">
-  <meta property="og:title" content="About">
-  <meta property="og:description" content="This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/) You can find the source code for Minima at GitHub: [jekyll][jekyll-organization] / [minima](https://github.com/jekyll/minima) You can find the source code for Jekyll at GitHub: [jekyll][jekyll-organization]...">
+  <meta property="og:title" content="Tag Index">
+  <meta property="og:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:',' | sort -%} {%- for tag...">
 
   
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/oku_val/about/">
-  <link rel="canonical" href="http://localhost:4000/oku_val/about/">
+  <meta property="og:url" content="http://localhost:4000/oku_val/tags.html">
+  <link rel="canonical" href="http://localhost:4000/oku_val/tags.html">
   
 
   
@@ -89,8 +89,8 @@
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="About">
-  <meta property="twitter:description" content="This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/) You can find the source code for Minima at GitHub: [jekyll][jekyll-organization] / [minima](https://github.com/jekyll/minima) You can find the source code for Jekyll at GitHub: [jekyll][jekyll-organization]...">
+  <meta property="twitter:title" content="Tag Index">
+  <meta property="twitter:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:',' | sort -%} {%- for tag...">
 
   
 
@@ -142,7 +142,7 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="page-heading">
-          <h1>About</h1>
+          <h1>Tag Index</h1>
           
 
           
@@ -162,16 +162,30 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
-
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
-
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
-
+      <a href="#books" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;books&nbsp;(1)</a><a href="#test" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;test&nbsp;(2)</a><div id="full-tags-list"><h2 id="books" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;books&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/oku_val/2020/02/26/flake-it-till-you-make-it.html">Flake it till you make it</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-26T00:00:00-06:00">February 26, 2020</time>
+                </div>
+            </div></div><h2 id="test" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;test&nbsp;(2)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/oku_val/2020/02/28/test-markdown.html">Sample blog post</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-28T00:00:00-06:00">February 28, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/oku_val/2020/02/26/flake-it-till-you-make-it.html">Flake it till you make it</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-26T00:00:00-06:00">February 26, 2020</time>
+                </div>
+            </div></div></div>
 
 
       
