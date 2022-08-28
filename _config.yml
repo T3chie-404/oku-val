@@ -3,6 +3,7 @@ title: Bitoku Labs / Solana Validator
 #email: your-email@domain.com
 url: https://bitoku.io
 description: "High-Performance Solana Validator Operated by Bitoku Labs"
+baseurl: "oku-val"
 keywords: "bitoku,solana,validator"
 skills: "High-Performance Solana Validator Operated by Bitoku Labs"
 #meta_author: LastName FirstName
